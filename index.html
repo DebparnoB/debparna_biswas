@@ -316,7 +316,7 @@ https://templatemo.com/tm-531-reflux
                       src="assets/images/portfolio-01.jpg"
                       alt="sq-sample26"
                     />
-                    <figcaption>
+                    <figcaption class="mobile_tog">
 					  <i class="fa fa-search" onclick="window.open('http://ec2-3-138-173-214.us-east-2.compute.amazonaws.com:4200/','_blank');"
 					  style="cursor:pointer"></i
                       >
@@ -866,6 +866,12 @@ https://templatemo.com/tm-531-reflux
     <script src="assets/js/lightbox.js"></script>
     <script src="assets/js/custom.js"></script>
     <script>
+	    
+	$(document).ready(function(){
+          $(".mobile_tog").hide();
+
+  });
+});
       //according to loftblog tut
       $(".main-menu li:first").addClass("active");
 	  
