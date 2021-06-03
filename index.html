@@ -806,7 +806,7 @@ https://templatemo.com/tm-531-reflux
           <div class="row">
             <div class="right-content">
               <div class="container">
-                <form id="contact" action="#" method="post">
+                <form id="contact" action="javascript:return false;" method="post">
                   <div class="row">
                     <div class="col-md-6">
                       <fieldset>
@@ -935,7 +935,8 @@ https://templatemo.com/tm-531-reflux
 	  
 	  function sendEmail(){
 			if(document.getElementById("contact").checkValidity()){
-			alert("Thank you for communicating. Will get back to you at the earliest.");
+				alert("Thank you for communicating. Will get back to you at the earliest.");
+				document.getElementById("contact").reset();
 			}
 	  }
     </script>
