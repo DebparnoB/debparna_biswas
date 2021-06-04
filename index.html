@@ -311,12 +311,12 @@ https://templatemo.com/tm-531-reflux
               </form>
               <div class="isotope-box">
                 <div class="isotope-item" data-type="project">
-                  <figure class="snip1321">
+                  <figure class="snip1321 mobile_view">
                     <img
                       src="assets/images/portfolio-01.jpg"
                       alt="sq-sample26"
                     />
-                    <figcaption>
+                    <figcaption class="mobile_ref">
 					  <i class="fa fa-search" onclick="window.open('http://ec2-3-138-173-214.us-east-2.compute.amazonaws.com:4200/','_blank');"
 					  style="cursor:pointer"></i
                       >
@@ -917,6 +917,28 @@ https://templatemo.com/tm-531-reflux
       $(window).scroll(function() {
         checkSection();
       });
+	  
+	  $(document).ready(function(){
+		  if(detectMob()){
+			  $(".mobile_view").removeClass("snip1321");
+			  $(".mobile_ref").addClass("mobile_fig");
+		  }			 
+		});
+		
+	  function detectMob() {		
+		//return ( ( window.innerWidth <= 800 ) && ( window.innerHeight <= 600 ) );
+		if (navigator.userAgent.match(/Android/i)
+                || navigator.userAgent.match(/webOS/i)
+                || navigator.userAgent.match(/iPhone/i) 
+                || navigator.userAgent.match(/iPad/i) 
+                || navigator.userAgent.match(/iPod/i)
+                || navigator.userAgent.match(/BlackBerry/i)
+                || navigator.userAgent.match(/Windows Phone/i)) {
+                return true;
+            } else {
+                return false;
+            }
+	  }
 	  
 	  function sendEmail(){
 			if(document.getElementById("contact").checkValidity()){
