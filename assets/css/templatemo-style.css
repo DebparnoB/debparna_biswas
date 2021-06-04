@@ -592,6 +592,7 @@ figure.snip1321 span {
     font-style: italic;
     display: block;
     color: #7a7a7a;
+	padding: 20px;
 }
 figure.snip1321 i {
   position: relative!important;
@@ -652,8 +653,9 @@ figure.snip1321.hover:after {
 	right: 20px;
 	position: absolute;
 	z-index: 1;	
-	background: rgba(255, 255, 255, 0.6);
+	background: rgba(255, 255, 255, 0.8);
 	padding: 20px;
+	border-radius: 17px;
 }
 
 .mobile_fig i {	
@@ -674,6 +676,13 @@ figure.snip1321.hover:after {
 	margin-bottom: 5px;
 	color: #232323;
 	font-size: 20px;
+}
+
+.mobile_fig span {
+    font-size: 10px;
+    font-style: italic;
+    display: block;
+    color: #000000;
 }
 
 
