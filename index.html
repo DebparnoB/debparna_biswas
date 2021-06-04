@@ -885,12 +885,13 @@ https://templatemo.com/tm-531-reflux
 			  $(".mobile_view").removeClass("snip1321");
 			  $(".mobile_ref").addClass("mobile_fig");
 		  }		
-		  var $row = $(".isotope-box");
-		   $row.isotope({
-			 itemSelector: ".isotope-item",
-			 layoutMode:'fitRows'
+		  $(".isotope-box").load(location.href + ".isotope-box");
+		  <!-- var $row = $(".isotope-box"); -->
+		   <!-- $row.isotope({ -->
+			 <!-- itemSelector: ".isotope-item", -->
+			 <!-- layoutMode:'fitRows' -->
 
-  });
+  <!-- }); -->
 		});
 		
 	  function detectMob() {		
