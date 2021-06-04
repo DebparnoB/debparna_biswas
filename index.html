@@ -277,15 +277,17 @@ https://templatemo.com/tm-531-reflux
               <form class="isotope-toolbar">
                 <label
                   ><input
+				    id="proj_radio"
+					checked=""
                     type="radio"
                     data-type="project"
-                    checked=""
                     name="isotope-filter"
                   />
                   <span>Technical Projects</span></label
                 >
                 <label
                   ><input
+					id="posters_radio"
                     type="radio"
                     data-type="posters"
                     name="isotope-filter"
@@ -294,6 +296,7 @@ https://templatemo.com/tm-531-reflux
                 >
                 <label
                   ><input
+				    id="videos_radio"
                     type="radio"
                     data-type="videos"
                     name="isotope-filter"
@@ -302,6 +305,7 @@ https://templatemo.com/tm-531-reflux
                 >
                 <label
                   ><input
+					id="motions_radio"
                     type="radio"
                     data-type="motions"
                     name="isotope-filter"
@@ -885,13 +889,10 @@ https://templatemo.com/tm-531-reflux
 			  $(".mobile_view").removeClass("snip1321");
 			  $(".mobile_ref").addClass("mobile_fig");
 		  }		
-		  $(".isotope-box").load(location.href + ".isotope-box");
-		  <!-- var $row = $(".isotope-box"); -->
-		   <!-- $row.isotope({ -->
-			 <!-- itemSelector: ".isotope-item", -->
-			 <!-- layoutMode:'fitRows' -->
-
-  <!-- }); -->
+		   $('#posters_radio').trigger('click');
+		   $('#videos_radio').trigger('click');
+		   $('#motions_radio').trigger('click');
+		   $('#proj_radio').trigger('click');
 		});
 		
 	  function detectMob() {		
